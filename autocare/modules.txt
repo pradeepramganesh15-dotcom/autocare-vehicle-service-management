@@ -1,1 +1,7 @@
 Auto Care
+Masters
+Service Management
+Inventory
+Billing
+Reports & Analytics
+Administration

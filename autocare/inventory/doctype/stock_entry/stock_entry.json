@@ -1,0 +1,95 @@
+{
+  "actions": [],
+  "allow_bulk_edit": 1,
+  "allow_rename": 1,
+  "autoname": "STE-.####",
+  "creation": "2026-09-28 16:59:56.702409",
+  "doctype": "DocType",
+  "engine": "InnoDB",
+  "field_order": [
+    "entry_date",
+    "entry_type",
+    "spare_part",
+    "quantity",
+    "rate",
+    "supplier",
+    "remarks"
+  ],
+  "fields": [
+    {
+      "fieldname": "entry_date",
+      "fieldtype": "Date",
+      "default": "Today",
+      "in_list_view": 1,
+      "label": "Entry Date",
+      "reqd": 1
+    },
+    {
+      "fieldname": "entry_type",
+      "fieldtype": "Select",
+      "in_list_view": 1,
+      "label": "Entry Type",
+      "options": "Stock In\nStock Out",
+      "reqd": 1
+    },
+    {
+      "fieldname": "spare_part",
+      "fieldtype": "Link",
+      "in_list_view": 1,
+      "label": "Spare Part",
+      "options": "Spare Part",
+      "reqd": 1
+    },
+    {
+      "fieldname": "quantity",
+      "fieldtype": "Int",
+      "in_list_view": 1,
+      "label": "Quantity",
+      "reqd": 1
+    },
+    {
+      "fieldname": "rate",
+      "fieldtype": "Currency",
+      "label": "Rate"
+    },
+    {
+      "fieldname": "supplier",
+      "fieldtype": "Link",
+      "label": "Supplier",
+      "options": "Supplier"
+    },
+    {
+      "fieldname": "remarks",
+      "fieldtype": "Small Text",
+      "label": "Remarks"
+    }
+  ],
+  "grid_page_length": 50,
+  "index_web_pages_for_search": 1,
+  "links": [],
+  "modified": "2026-09-28 17:00:24.769025",
+  "modified_by": "Administrator",
+  "module": "Inventory",
+  "name": "Stock Entry",
+  "naming_rule": "By \"Naming Series\" field",
+  "owner": "Administrator",
+  "permissions": [
+    {
+      "create": 1,
+      "delete": 1,
+      "email": 1,
+      "export": 1,
+      "print": 1,
+      "read": 1,
+      "report": 1,
+      "role": "System Manager",
+      "share": 1,
+      "write": 1
+    }
+  ],
+  "row_format": "Dynamic", 
+  "rows_threshold_for_grid_search": 20,
+  "sort_field": "creation",
+  "sort_order": "DESC",
+  "states": []
+}
